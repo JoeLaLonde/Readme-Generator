@@ -1,47 +1,48 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input',
-        name: 'Title',
+        name: 'title',
         message: 'Project Title?',
     },
     {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: 'Project Description?',
     },
     {
         type: 'input',
-        name: 'Table Of Contents',
-        message: 'Table of Contents?',
-    },
-    {
-        type: 'input',
-        name: 'Instalation',
+        name: 'instalation',
         message: 'Instalation?',
     },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'Usage?',
     },
     {
         type: 'input',
-        name: 'License',
+        name: 'license',
         message: 'License?',
     },
     {
         type: 'input',
-        name: 'Contributing',
+        name: 'contributing',
         message: 'Contributers?',
     },
     {
         type: 'input',
-        name: 'Questions',
-        message: 'Contact info?',
+        name: 'github',
+        message: 'github profile?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'email?',
     },
 ];
 
